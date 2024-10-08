@@ -1,7 +1,7 @@
 import { Box, Heading, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 // import { useSearchParams } from "react-router-dom"
-const PaymentSuccess = () => {
+const PaymentFailure = () => {
 
     // const seachQuery = useSearchParams()[0]
 
@@ -21,4 +21,4 @@ const PaymentSuccess = () => {
     )
 }
 
-export default PaymentSuccess
+export default PaymentFailure

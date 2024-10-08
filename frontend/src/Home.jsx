@@ -5,14 +5,14 @@ import axios from "axios";
 
 const Home = () => {
   const checkoutHandler = async (amount) => {
-    const { data: { key } } = await axios.get("http://www.localhost:8800/api/getkey")
     const {
       data: { order },
     } = await axios.post("http://localhost:8800/api/checkout", {
       amount,
     });
+    // const { data: { key } } = await axios.get("http://www.localhost:8800/api/getkey")
     const options = {
-      key,
+      key: "rzp_test_9xmjkpHzMu3whL",
       amount: order.amount,
       currency: "INR",
       name: "sns",
