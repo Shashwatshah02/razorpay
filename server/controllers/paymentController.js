@@ -9,7 +9,7 @@ export const checkout = async (req, res) => {
     };
     // This could throw an error, so we wrap it in a try/catch block
     const order = await instance.orders.create(options);
-
+    console.log("Order created:", order);
     // If the order is created successfully, send the success response
     res.status(200).json({
       success: true,
