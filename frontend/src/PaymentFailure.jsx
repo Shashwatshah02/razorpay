@@ -10,7 +10,7 @@ const PaymentFailure = () => {
         <Box>
             <VStack h="100vh" justifyContent={"center"}>
 
-                <Heading textTransform={"uppercase"}> Order Successfull</Heading>
+                <Heading textTransform={"uppercase"}> Order failure</Heading>
 
                 <Text>
                     Reference No. : 123456789
